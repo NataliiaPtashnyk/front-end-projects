@@ -1,0 +1,23 @@
+.Task2{
+    display:flex;
+    justify-content: space-between;
+    font-size: 12px;
+    max-width:800px;
+    margin: 10px auto;
+}
+
+.kate{
+    background-color: yellow;
+}
+.nina{
+    background-color: blue;
+    color: white;
+}
+.john{
+    background-color: gray;
+    color: white;
+}
+.olga{
+    background-color: rgb(59, 119, 175);
+    color: white;
+}
