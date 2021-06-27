@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import lesson1 from './lesson1';
-import reportWebVitals from './reportWebVitals';
-import img1 from './img1.jpeg';
+import App from './components/App/App';
 
-reportWebVitals();
+
+ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
