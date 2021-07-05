@@ -16,8 +16,8 @@ class Task3 extends React.Component {
     </div>
     
     <div>
-        <button className='btn' onClick={() => this.setState({ value: this.state.value + 1})}>+</button>
-        <button className='btn' onClick={() => this.setState({ value: this.state.value - 1})}>-</button>
+        <button className='btn' onClick={() => this.setState({ value: ++this.state.value})}>+</button>
+        <button className='btn' onClick={() => this.setState({ value: --this.state.value})}>-</button>
     </div> 
     
 </div>

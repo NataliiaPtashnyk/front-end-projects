@@ -1,14 +1,26 @@
 import React from 'react';
- 
-const nameList = ['John', 'Olga', 'Vasyl', 'Inna', 'Tom'];
-const list = [];
+import {v4} from 'uuid';
+import './style.css';
 
-// I know it's easier to use .map 
-nameList.forEach((item, i) => list.push(<li key={item+i}>{item}</li>));
+const list = ["Тарас", "Олег", "Василий", "Павел", "Лев"];
 
+const ListElement = ({value}) => {
+    return (
+        <li>
+           {value}
+        </li>
+    )
+}
 class Task2 extends React.Component{
     render(){
-        return(<ol>{list}</ol>)
+        return(
+       <ul>
+           {list.map((element) => {
+               const {value} = element;
+               return <ListElement key ={v4()} value = {element} />
+           })}
+       </ul>
+        )
     }
 }
 export default Task2;
