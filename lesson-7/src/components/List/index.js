@@ -1,23 +1,23 @@
 import React from 'react';
+import '../App/App';
 
 export default class List extends React.Component{
+    handleClick(id){
+        this.props.onDelete(id);
+    }
     render(){
-
-    const divStyle = {
-        display: 'flex',
-        flexDirection : 'row',
-        justifyContent: 'space-around',
-    };
         return(
-                <ul>
-                    {this.props.list.map(element =>{
+            <ul>
+                {this.props.list.map(element =>{
                     const {id, value} = element;
-                    return <div style={divStyle}> 
-                        <li key={id}>{value}</li> <button>X</button>
-                        </div>
-                    })} 
-                </ul>
-            
+                    return ( 
+                        <li key={id}>
+                            <span>{value}</span>
+                            <button className="input__btn" onClick={()=>this.handleClick(id)}>Delete</button>
+                        </li> 
+                        )
+                    })}
+            </ul>
         )
     }
 }

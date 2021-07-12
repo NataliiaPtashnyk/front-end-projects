@@ -1,13 +1,12 @@
 import React from 'react';
+import '../App/App';
 
 export default class Header extends React.Component{
     render(){
         return(
-            <header>
-                You have {this.props.length} Todos.
+            <header className="headerStyle">
+                You have <span className="propsNum">{this.props.length}</span>Todos
             </header>
-
             )
-    }
-    
+        }   
 }

@@ -1,38 +1,75 @@
-.App {
+.div__form{
+  width: 350px;
+  background-color: white;
+  height: 500px;
+  margin: 50px auto;
+  border-radius: 20px;
+  box-shadow: 0px 4px 36px 12px rgba(15, 16, 17, 0.4);
+}
+
+.headerStyle{
+  padding: 20px;
+  font-size: 26px;
+  font-weight: 500;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.propsNum{
+  color: #ffa4ae;
+    font-weight: 500;
+    margin-right: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form{
+  text-align: center;
+  position: relative;
+    top: 350px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input__text{
+  padding: 15px;
+  width: 204px;
+  margin-right: 20px;
+  border: none;
+  box-shadow: 0px 4px 20px -11px rgb(15 16 17 / 80%);
+  border-radius: 12px;
+  outline: none;
+}
+.input__btn{
+  border-radius: 20px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    cursor: pointer;
+    padding: 5px 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    box-shadow: 2px 3px #00000040;
+    max-height: 25px;
+    transition: all .2s linear;
+}
+.input__btn:hover{
+  color: #fecfef;
+    background: white;
+}
+ul{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+li{
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 200px 100px;
 }
 
-.App-link {
-  color: #61dafb;
+span{
+  font-weight: 300;
+  word-wrap: break-word; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul li::marker {
+  color: red;
+  font-size: 1.5em;
 }
