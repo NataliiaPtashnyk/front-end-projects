@@ -1,0 +1,40 @@
+body{
+    background-color: beige;
+}
+div{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+
+    form{
+        background-color: white;
+        margin: 40px 0;
+        padding: 25px;
+        box-shadow: 2px 2px 5px #847777;
+
+        input{
+            margin: 10px;
+            outline: none;
+            padding: 5px;
+
+            &:last-child{
+                width: 100px;
+                margin: 10px auto;
+                background-color: aquamarine;
+                padding: 9px;
+                border-radius: 21px;
+                font-size: 14px;
+                font-weight: 600;
+                border: none;
+                box-shadow: 2px 2px 5px #847777;
+                transition: all .2s linear;
+                &:hover{
+                    cursor:pointer;
+                    background-color: rgb(92, 190, 158);
+                    color: white;
+                    box-shadow: 2px 2px 5px #726666;
+                }
+            }
+        }
+    }
+}
